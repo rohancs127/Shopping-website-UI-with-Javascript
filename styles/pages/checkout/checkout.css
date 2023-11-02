@@ -151,6 +151,10 @@
   cursor: pointer;
 }
 
+.delivery-option-input:focus{
+  outline: none;
+}
+
 .delivery-option-date {
   color: rgb(0, 118, 0);
   font-weight: 500;
