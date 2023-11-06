@@ -31,7 +31,5 @@ export const addToCart =(productId) =>{
     })
   
     document.querySelector('.js-cart-quantity').innerHTML= cartQuantity;
-    
   }
   
- 
