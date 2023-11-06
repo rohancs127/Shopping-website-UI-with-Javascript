@@ -6,7 +6,6 @@ let orderSummaryhtml ='';
 cart.forEach((value)=>{
 
     const productId = value.productId;
-    console.log(productId);
 
     let matchingProduct;
     products.forEach((product)=>{
@@ -94,6 +93,5 @@ cart.forEach((value)=>{
 
 });
 
-console.log(orderSummaryhtml)
 
 document.querySelector('.order-summary').innerHTML = orderSummaryhtml;
