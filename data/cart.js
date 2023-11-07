@@ -42,3 +42,14 @@ export const addToCart =(productId) =>{
     document.querySelector('.js-cart-quantity').innerHTML= cartQuantity;
   }
   
+
+  export const removeFromCart = (productId)=>{
+      let newCart = [];
+      cart.forEach((product)=>{
+        if(product.productId != productId){
+          newCart.push(product);
+        }
+      });
+
+      cart = newCart;
+  }
