@@ -29,7 +29,9 @@ export const addToCart =(productId) =>{
 
     saveToStorage();
   
+  }
   
+  export function updateCartQuantity(){
     let cartQuantity = 0;
   
     cart.forEach((value)=>{
@@ -38,7 +40,6 @@ export const addToCart =(productId) =>{
   
     document.querySelector('.js-cart-quantity').innerHTML= cartQuantity;
   }
-  
 
   export const removeFromCart = (productId)=>{
       let newCart = [];

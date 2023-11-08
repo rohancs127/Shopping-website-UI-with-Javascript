@@ -2,6 +2,7 @@ import { cart, removeFromCart } from '../data/cart.js';
 import { products } from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 
+displayItemsQuantity();
 
 let orderSummaryhtml ='';
 cart.forEach((value)=>{
@@ -107,3 +108,14 @@ document.querySelectorAll('.delete-quantity-link').forEach((link)=>{
       itemHtml.remove();
   })
 })
+
+
+function displayItemsQuantity(){
+  let cartQuantity = 0;
+  
+    cart.forEach((value)=>{
+      cartQuantity+= value.quantity;
+    })
+  
+    document.querySelector('.return-to-home-link').innerHTML= `${cartQuantity} Items`;
+}
